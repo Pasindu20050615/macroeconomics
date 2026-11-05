@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f7f6;
+  color: #333;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.quiz-container {
+  max-width: 700px;
+  width: 100%;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+header {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+header h1 {
+  color: #2c3e50;
+  margin-bottom: 6px;
+}
+
+.question-card {
+  background: #fafafa;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.question-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #1a202c;
+}
+
+.options label {
+  display: block;
+  background: #fff;
+  border: 1px solid #cbd5e1;
+  padding: 10px 14px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.options label:hover {
+  background-color: #f1f5f9;
+}
+
+.options input {
+  margin-right: 10px;
+}
+
+button#submit-btn, .result-box button {
+  display: block;
+  width: 100%;
+  background-color: #3182ce;
+  color: #ffffff;
+  border: none;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button#submit-btn:hover, .result-box button:hover {
+  background-color: #2b6cb0;
+}
+
+.explanation {
+  display: none;
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.explanation.correct {
+  display: block;
+  background-color: #def7ec;
+  border-left: 4px solid #31c48d;
+  color: #03543f;
+}
+
+.explanation.incorrect {
+  display: block;
+  background-color: #fde8e8;
+  border-left: 4px solid #f98080;
+  color: #9b1c1c;
+}
+
+.result-box {
+  margin-top: 25px;
+  padding: 20px;
+  background-color: #ebf8ff;
+  border: 1px solid #bee3f8;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.result-box h2 {
+  color: #2b6cb0;
+  margin-bottom: 8px;
+}
+
+.result-box p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hidden {
+  display: none;
+}
