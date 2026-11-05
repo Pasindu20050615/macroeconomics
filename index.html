@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Macroeconomics Interactive Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="quiz-container">
+    <header>
+      <h1>Macroeconomics Quiz</h1>
+      <p>Test your knowledge on key economic concepts.</p>
+    </header>
+
+    <form id="quiz-form">
+      <!-- Question 1 -->
+      <div class="question-card" id="q1-card">
+        <h3>1. Which formula correctly represents the Expenditures Approach to calculating GDP?</h3>
+        <div class="options">
+          <label><input type="radio" name="q1" value="A" /> GDP = C + I + G + (X - M)</label>
+          <label><input type="radio" name="q1" value="B" /> GDP = C + I + G + (M - X)</label>
+          <label><input type="radio" name="q1" value="C" /> GDP = C + I + Savings + Imports</label>
+          <label><input type="radio" name="q1" value="D" /> GDP = Exports - Imports</label>
+        </div>
+        <div class="explanation" id="exp-q1"></div>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question-card" id="q2-card">
+        <h3>2. Which of the following items is included in the calculation of GDP?</h3>
+        <div class="options">
+          <label><input type="radio" name="q2" value="A" /> The sale of a used car</label>
+          <label><input type="radio" name="q2" value="B" /> Child care provided by a paid/licensed daycare center</label>
+          <label><input type="radio" name="q2" value="C" /> The value of raw iron used inside a manufactured refrigerator</label>
+          <label><input type="radio" name="q2" value="D" /> Increases in life expectancy over time</label>
+        </div>
+        <div class="explanation" id="exp-q2"></div>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="question-card" id="q3-card">
+        <h3>3. A Gini Coefficient value of 0 indicates:</h3>
+        <div class="options">
+          <label><input type="radio" name="q3" value="A" /> Perfect income inequality</label>
+          <label><input type="radio" name="q3" value="B" /> Maximum economic growth rate</label>
+          <label><input type="radio" name="q3" value="C" /> Perfect income equality</label>
+          <label><input type="radio" name="q3" value="D" /> High unemployment rate</label>
+        </div>
+        <div class="explanation" id="exp-q3"></div>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="question-card" id="q4-card">
+        <h3>4. What distinguishes Real GDP from Nominal GDP?</h3>
+        <div class="options">
+          <label><input type="radio" name="q4" value="A" /> Real GDP counts foreign-owned production only</label>
+          <label><input type="radio" name="q4" value="B" /> Real GDP is adjusted for changes in price level (inflation)</label>
+          <label><input type="radio" name="q4" value="C" /> Real GDP includes intermediate raw goods</label>
+          <label><input type="radio" name="q4" value="D" /> Real GDP ignores net exports</label>
+        </div>
+        <div class="explanation" id="exp-q4"></div>
+      </div>
+
+      <button type="submit" id="submit-btn">Submit Answers</button>
+    </form>
+
+    <div id="result-box" class="result-box hidden">
+      <h2>Your Results</h2>
+      <p id="score-text"></p>
+      <button onclick="window.location.reload()">Retake Quiz</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
